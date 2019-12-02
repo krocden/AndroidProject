@@ -1,12 +1,65 @@
 End-To-End Manual Test Cases
 
-1.
+Prerequisite
+- Run application.
 
-2.
+1. Enter a team
+Test case to see if an user can add a team.
+	1.1 Click the edit text.
+	1.2 Type a word
+	1.3 Press Submit.
+	1.4 Word entered should appears.
 
-3.
+2. Search a player
+Test case to see if an user can search for a player.'
+	2.1 If on the second activity (View team), click the left arrow in the options menu.
+	2.2	Click the edit text.
+	2.3 Type the name of a player
+	2.4 Press submit
+	2.5 A list of player should appears if any player match the entered name.
 
-4.
+3. Add a player 
+Test case to see if an user can add a player to the team.
+	Prerequisite: Test case 2. 'Search a player' to be done.
+	3.1 Click on the player you want to add to the team
+	3.2 Click Add button.
+	3.3 Press the right arrow in options menu.
+	3.4 Previously selected player should be listed in the screen.
+	
+4. Edit a player
+Test case to see if an user can edit a player.
+	Prerequisite: Have at least 1 player in the team.
+	4.1 Right click the right arrow in options menu from first activity (Search player).
+	4.2 Press edit button
+	4.3 Change any data as desired.
+	4.4 Press update button
+	4.5 Press return button
+	4.6 Player information should be changed.
+	
+5. Delete a player
+Test case to see if an user can remove a player.
+	Prerequisite: Have at least 1 player in the team.
+	5.1 Right click the right arrow in options menu from first activity (Search player).
+	5.2 Press remove player.
+	5.3 Player should disappear from the screen.
 
-5.
+6. Review a team
+Test case to see if an user can review a team.
+	Prerequisite: Have 5 player in the team.
+	6.1	Right click the right arrow in options menu from first activity (Search player).
+	6.2 Click the review button.
+	6.3 A suggestion should be displayed.
 
+7. Reset the team
+Test case to see if an user can reset the whole team and restart the whole application.
+	7.1 Right click the right arrow in options menu from first activity (Search player).
+	7.2 Press the reset button.
+	7.3 Press reset
+	7.4 The whole application should restart and start from the beginning.
+	
+8. View team
+Test case to see if an user can view the team.
+	8.1 Click the right arrow in the options menu from first activity (Search player).
+	8.1 A list of player should appears if there are any in the team.
+	
+---

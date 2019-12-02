@@ -39,11 +39,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.itemView.setSelected(selectedPos == position);
         holder.fname.setText(player.getFname());
         holder.lname.setText(player.getLname());
-//        holder.heightf.setText(String.format(Locale.CANADA,"%.2f",player.getHeight_feet()));
-//        holder.heighti.setText(String.format(Locale.CANADA,"%.2f",player.getHeight_inches()));
-//        holder.position.setText(player.getPosition());
         holder.team.setText(player.getTeam());
-//        holder.weight.setText(String.format(Locale.CANADA,"%.2f",player.getWeight_pounds()));
     }
 
     @Override
@@ -65,11 +61,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             itemView.setOnClickListener(this);
             fname = itemView.findViewById(R.id.fn);
             lname = itemView.findViewById(R.id.ln);
-//            heightf = itemView.findViewById(R.id.hf);
-//            heighti = itemView.findViewById(R.id.hi);
-//            position = itemView.findViewById(R.id.pos);
             team = itemView.findViewById(R.id.team);
-//            weight = itemView.findViewById(R.id.lbs);
         }
 
         @Override
@@ -78,16 +70,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             notifyItemChanged(selectedPos);
             selectedPos = getLayoutPosition();
             notifyItemChanged(selectedPos);
-//            int position = getAdapterPosition();
-//            Player player = playerList.get(position);
-//            Log.d("Clicked", "onClick: " + player.getFname());
-//            Log.d("Clicked", "onClick: " + player.getLname());
-//
-//            Intent intent = new Intent(context, activity_details.class);
-//            intent.putExtra("First name ", player.getFname());
-//            intent.putExtra("last name ", player.getLname());
-//
-//            context.startActivity(intent);
+
         }
     }
 

@@ -3,6 +3,7 @@ package com.example.test1;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.DialogInterface;
@@ -110,6 +111,12 @@ public class MainActivity extends AppCompatActivity {
     }
     private void changeActivity(){
         // Method to change activity in Options Menu
+
+        // Delete all fragments after changing activity.
+        FragmentManager fm = getSupportFragmentManager();
+        for(int i = 0; i < fm.getBackStackEntryCount(); ++i) {
+            fm.popBackStack();
+        }
         Intent i = new Intent(this, SecondActivity.class);
         i.putExtra("team", teamname);
         startActivity(i);
