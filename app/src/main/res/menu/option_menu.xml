@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="example.javatpoint.com.optionmenu.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <item
+        android:id="@+id/info"
+        android:title="@string/titleInfo"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_info_black_18dp"/>
+    <item
+        android:id="@+id/change"
+        android:title="@string/titleNext"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_arrow_right_alt_black_18dp"/>
+</menu>

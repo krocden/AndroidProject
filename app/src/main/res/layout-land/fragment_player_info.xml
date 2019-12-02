@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".playerInfoFragment"
+    android:background="@drawable/gradient">
+    <RelativeLayout
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/fn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Fname"
+            android:textSize="28sp" />
+        <TextView
+            android:id="@+id/ln"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/fn"
+            android:padding="8dp"
+            android:text="Lname"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="-10dp"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:text="team"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/pos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/team"
+        android:layout_marginTop="-30dp"
+        android:padding="8dp"
+        android:text="Position:"
+        android:textSize="20sp" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/team"
+        android:layout_toEndOf="@+id/pos"
+        android:layout_marginTop="-30dp"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pos"
+        android:layout_marginTop="5dp"
+        android:padding="8dp"
+        android:text="Height:"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/lbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/height"
+        android:layout_marginTop="5dp"
+        android:padding="8dp"
+        android:text="Weight:"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/editheightfeet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pos"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/height"
+        android:hint="Feet"
+        android:layout_marginLeft="30dp"
+        android:digits="567"
+        android:inputType="number"
+        android:maxLength="1"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/editheightinches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pos"
+        android:layout_toEndOf="@+id/editheightfeet"
+        android:hint="Inches"
+        android:maxLength="1"
+        android:layout_marginTop="15dp"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textSize="20sp" />
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:min="150"
+        android:max="350"
+        android:layout_toEndOf="@+id/lbs"
+        android:layout_below="@id/height"
+        android:layout_marginLeft="30dp"
+        android:minWidth="120dp"
+        android:layout_marginTop="25dp"/>
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/centerPlaceholder"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="Return"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/centerPlaceholder"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/centerPlaceholder"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:text="Update"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

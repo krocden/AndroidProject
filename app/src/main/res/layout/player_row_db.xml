@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <RelativeLayout
+            android:background="@drawable/highlight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/fn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:layout_marginBottom="-10dp"
+                android:padding="8dp"
+                android:text="Fname"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/ln"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:layout_marginBottom="-10dp"
+                android:layout_toEndOf="@id/fn"
+                android:padding="8dp"
+                android:text="Lname"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:layout_marginBottom="-10dp"
+                android:layout_below="@+id/fn"
+                android:padding="8dp"
+                android:text="team"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:layout_marginBottom="-10dp"
+                android:layout_below="@+id/team"
+                android:padding="8dp"
+                android:text="Position:"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:layout_below="@+id/pos"
+                android:padding="8dp"
+                android:text="Height:"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/lbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:layout_below="@id/pos"
+                android:layout_toEndOf="@+id/height"
+                android:padding="8dp"
+                android:text="Weight:"
+                android:textSize="14sp" />
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/delete"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
+                android:text="Edit">
+            </Button>
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
+                android:text="Remove">
+            </Button>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
